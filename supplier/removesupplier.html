@@ -1,0 +1,41 @@
+<html>
+<head>
+
+  <script type="text/javascript">
+  function validateForm()
+{
+var sup_id=document.forms["myForm"]["sup_id"].value;
+
+
+if (sup_id==null ||sup_id=="")
+  {
+  alert("Brand ID must be filled out");
+  // goto ["c_fname"];
+  return false;
+  }
+
+}
+
+
+</script>
+</head>
+<body>
+
+<form name="myForm" action="removesupplier.php" method="post" onSubmit="return validateForm()">
+<table width="473" height="270" border="0" align="center" cellpadding="0" cellspacing="2">
+  <tr>
+   <td align="right" class="ggg">&nbsp;</td>
+    <td bgcolor="#FFFFFF" class="must">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="178" height="36" align="right" class="ggg">Supplier ID</td>
+    <td width="15" bgcolor="#FFFFFF" class="must">*</td>
+    <td width="168"><input type="text" name="sup_id" id="sup_id" /></td>
+  </tr>
+  
+  <tr align="right" class="ggg"><td colspan="3"> <input name="submit" type="submit" id="submit" value="delete" ></td></tr>
+</table>
+  </form>
+  </body>
+  <html>
